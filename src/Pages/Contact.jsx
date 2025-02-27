@@ -1,3 +1,5 @@
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-6">
@@ -37,6 +39,13 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold">Email</h3>
                 <p className="text-gray-400">tousifjamadar@52gmail.com</p>
               </div>
+            </div>
+            {/* Social Media Links */}
+            <div className="flex justify-center space-x-6 mt-6">
+              <a href="https://www.facebook.com/share/12LWTbLdcz4/" target="_blank" rel="noopener noreferrer" className="text-[#3399ff] text-2xl hover:text-[#267acc]"><Facebook /></a>
+              <a href="https://x.com/Tosif4141458?t=Zf1PyR_kks-SM7sJrY5ZEw&s=09" target="_blank" rel="noopener noreferrer" className="text-[#3399ff] text-2xl hover:text-[#267acc]"><Twitter /></a>
+              <a href="https://www.instagram.com/tosif_jamadar6407/profilecard/?igsh=MWsycGZ0N3V6MWw1aA==" target="_blank" rel="noopener noreferrer" className="text-[#3399ff] text-2xl hover:text-[#267acc]"><Instagram /></a>
+              <a href="https://www.linkedin.com/in/tosif-jamadar-4745a3313/" target="_blank" rel="noopener noreferrer" className="text-[#3399ff] text-2xl hover:text-[#267acc]"><Linkedin /></a>
             </div>
           </div>
         </div>

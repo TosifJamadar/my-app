@@ -13,3 +13,4 @@ This is a personal portfolio website built to showcase my skills, projects, and 
 ## Technologies Used
 - **Frontend**: HTML5, Css, React.js, Tailwind CSS
 - **Deployment**: Netlify / GitHub Pages
+
