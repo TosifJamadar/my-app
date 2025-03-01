@@ -1,3 +1,4 @@
+import profilePic from "../assets/Profileimg.jpg"; 
 export default function About() {
   return (
     <div className="bg-gray-900 min-h-screen flex flex-col items-center py-10 px-6">
@@ -7,8 +8,8 @@ export default function About() {
       
       <div className="bg-gray-800 p-8 rounded-2xl shadow-lg max-w-3xl w-full flex flex-col items-center">
         <img
-          className="w-36 h-36 rounded-full border-4 border-[#3399ff] shadow-lg transform hover:scale-105 transition duration-300"
-          src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+          className="w-50 h-50 rounded-full border-4 border-[#3399ff] shadow-lg transform hover:scale-105 transition duration-300"
+          src={profilePic}
           alt="Profile Pic"
         />
         
