@@ -20,7 +20,7 @@ export default function About() {
           Experienced in React, Tailwind CSS, and JavaScript. Always eager to learn and improve my skills.
         </p>
         
-        <button className="text-white py-4 px-10 my-5 text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl">
+        <button className="text-white py-4 px-10 my-5 text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl cursor-pointer">
           Read More
         </button>
       </div>

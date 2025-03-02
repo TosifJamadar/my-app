@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className=" bg-gray-950 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-2xl mx- font-bold hover:text-[#3399ff] transition duration-300 cursor-pointer">PortFolio</h1>
+        <h1 className="text-white text-3xl mx- font-bold hover:text-[#3399ff] transition duration-300 cursor-pointer">PortFolio</h1>
         <button
           className="text-white md:hidden"
           onClick={() => setIsOpen(!isOpen)}
@@ -17,6 +17,7 @@ const Navbar = () => {
           <li><a href="/about" className="text-white block text-xl p-2 hover:text-[#3399ff] transition duration-300">About</a></li>
           <li><a href="/education" className="text-white block text-xl p-2 hover:text-[#3399ff] transition duration-300">Education </a></li>
           <li><a href="/skills" className="text-white block text-xl p-2 hover:text-[#3399ff] transition duration-300">Skills</a></li>
+          <li><a href="/project" className="text-white block text-xl p-2 hover:text-[#3399ff] transition duration-300">Project</a></li>
           <li><a href="/contact" className="text-white block text-xl p-2 hover:text-[#3399ff] transition duration-300">Contact</a></li>
         </ul>
       </div>

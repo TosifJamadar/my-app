@@ -47,7 +47,7 @@ const Journey = () => {
           <h2 className="text-white text-3xl font-bold pb-5">Education</h2>
           <div className="grid grid-cols-1 gap-6">
             {timelineData.map((item, index) => (
-              <div key={index} className="p-5 rounded-lg bg-gray-700 shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+              <div key={index} className="p-5 rounded-lg bg-gray-700 shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 cursor-pointer">
                 <h3 className="text-white text-xl font-bold">{item.title}</h3>
                 <p className="text-gray-300 text-sm">{item.institution}</p>
                 <p className="text-gray-400 text-sm">{item.year}</p>
@@ -61,7 +61,7 @@ const Journey = () => {
           <h2 className="text-white text-3xl font-bold pb-5">Achievements</h2>
           <div className="grid grid-cols-1 gap-6">
             {achievements.map((item, index) => (
-              <div key={index} className="p-5 rounded-lg bg-gray-700 shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+              <div key={index} className="p-5 rounded-lg bg-gray-700 shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 cursor-pointer">
                 <h3 className="text-white text-xl font-bold">{item.title}</h3>
                 <p className="text-gray-300 text-sm">{item.organization}</p>
                 <p className="text-gray-400 text-sm">{item.year}</p>

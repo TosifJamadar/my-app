@@ -16,10 +16,10 @@ const Home = () => {
         
         {/* Buttons */}
         <div className="mt-8 flex justify-center gap-6">
-          <button className="text-white py-4 px-10 text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl">
+          <button className="text-white py-4 px-10 text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl cursor-pointer">
             Hire Me
           </button>
-          <button className="text-white py-4 px-10 text-lg font-semibold bg-gradient-to-r from-gray-800 to-gray-600 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl">
+          <button className="text-white py-4 px-10 text-lg font-semibold bg-gradient-to-r from-gray-800 to-gray-600 rounded-full shadow-xl transition-transform transform hover:scale-110 hover:shadow-2xl cursor-pointer">
             Lets Talk
           </button>
         </div>
