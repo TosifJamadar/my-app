@@ -10,65 +10,74 @@ import profilePic9 from "../assets/Project9.png";
 import profilePic10 from "../assets/Project4.png";
 import profilePic11 from "../assets/Project10.png";
 
-
 const Project = () => {
   const ProjectsDetail = [
     {
       title: "Pet Adoption Website",
-      description: "A platform to connect pet adopters with rescue shelters, featuring search, profiles, and adoption processes.",
+      description: "A platform to connect pet adopters with rescue shelters, featuring search, profiles, and adoption processes",
       image: profilePic,
+      githubLink: "https://github.com/TosifJamadar/ICP9-G2-React-Project",
     },
     {
       title: "E-commerce Store",
-      description: "stores products that are available for customers to purchase and manage customers",
+      description: "Stores products that are available for customers to purchase and manage customers",
       image: profilePic2,
+      githubLink: "https://github.com/TosifJamadar/icp9.0-javascript-group-project-3",
     },
     {
       title: "Spicy",
-      description: " stores products that are available for customers to purchase and manage customers ",
+      description: "Stores products that are available for customers to purchase and manage customers",
       image: profilePic3,
+      githubLink: "https://github.com/TosifJamadar/Spicy",
     },
     {
-      title: "Portofilo",
-      description: " This is a personal portfolio website built to showcase my skills, projects. It includes a portfolio website",
+      title: "Portfolio",
+      description: "This is a personal portfolio website built to showcase my skills and projects.",
       image: profilePic4,
+      githubLink: "https://github.com/TosifJamadar/Portfolio",
     },
     {
       title: "G-11 Olympic",
-      description: "This project aims to provide comprehensive information about the Olympic Games, including historical data, upcoming events, athlete profiles.",
+      description: "Provides comprehensive information about the Olympic Games, including historical data, upcoming events, and athlete profiles.",
       image: profilePic5,
+      githubLink: "https://github.com/TosifJamadar/icp9.0-html-css-group-project-2",
     },
     {
       title: "Calculator",
-      description: "I have created a simple calculator using HTML, CSS. This Calculator performs simple mathematical calculations like Addition, subtraction, multiplication, division.",
+      description: "A simple calculator performing basic mathematical operations.",
       image: profilePic6,
+      githubLink: "https://github.com/TosifJamadar/calculator",
     },
     {
-      title: "Search Short filter",
-      description: " I have created a simple search filter using HTML,CSS,javascript, React.js and show the search results using JavaScript and React.js. and show the filte expression",
+      title: "Search Short Filter",
+      description: "A search and filter feature using React.js.",
       image: profilePic7,
+      githubLink: "https://github.com/yourusername/search-filter",
     },
     {
-      title: "Tic Tac Toe ",
-      description: "Tic Tac Toe built using HTML,CSS,JS.Players take turns to mark X and O on the grid, with automatic win detection the option to reset or start new game.",
+      title: "Tic Tac Toe",
+      description: "A Tic Tac Toe game built with HTML, CSS, and JavaScript.",
       image: profilePic8,
+      githubLink: "https://github.com/TosifJamadar/Tic-Tac-Toe",
     },
     {
       title: "Bulb Toggler",
-      description: "Show buttons with name of you favourite actors and clicking on buttons show the respective actor's image  instead  of the actor's name and name of the actor. ",
+      description: "Toggle images based on user selection.",
       image: profilePic9,
+      githubLink: "https://github.com/TosifJamadar/Assignment-28",
     },
     {
       title: "Match Tracker",
-      description: "Match Tracker is a performance analysis software solution that provides teams with pre-match planning, live match analysis and post-match review. .",
+      description: "A performance analysis software for teams.",
       image: profilePic10,
+      githubLink: "https://github.com/TosifJamadar/Match-Tracker",
     },
     {
       title: "Text Function",
-      description: " the text function that is used to convert the text into upper case and lower case,word count and character count for each character ",
+      description: "A tool to convert text into uppercase, lowercase, count words, and characters.",
       image: profilePic11,
-    }
-
+      githubLink: "https://github.com/TosifJamadar/Text-Function",
+    },
   ];
 
   return (
@@ -76,16 +85,21 @@ const Project = () => {
       <h1 className="text-white text-5xl font-bold text-center pb-10">
         About <span className="text-[#3399ff]">Projects</span>
       </h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {ProjectsDetail.map((item, index) => (
           <div key={index} className="bg-gray-800 p-6 rounded-2xl shadow-lg w-80 transition-transform transform hover:scale-105 cursor-pointer">
-            <img className="w-full h-48 object-cover rounded-2xl" src={item.image} alt="Project" />
+            <img className="w-full h-48 object-cover rounded-2xl" src={item.image} alt={item.title} />
             <h2 className="text-white text-2xl font-bold mt-4 hover:text-[#3399ff]">{item.title}</h2>
             <p className="text-gray-300 mt-2 text-sm">{item.description}</p>
-            <button className="mt-4 w-full py-2 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition">
+            <a 
+              href={item.githubLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="mt-4 block w-full py-2 text-lg font-semibold text-white text-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition"
+            >
               Read More
-            </button>
+            </a>
           </div>
         ))}
       </div>
