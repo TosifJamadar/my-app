@@ -32,7 +32,7 @@ const Project = () => {
     },
     {
       title: "Portfolio",
-      description: "This is a personal portfolio website built to showcase my skills and projects.",
+      description: "The game built using html,css,js.This is a personal portfolio website built to showcase my skills and projects.",
       image: profilePic4,
       githubLink: "https://github.com/TosifJamadar/Portfolio",
     },
@@ -56,7 +56,7 @@ const Project = () => {
     },
     {
       title: "Tic Tac Toe",
-      description: "The game built using html,css,js. Players to mark X and O on the grid, with automatic win detection the option to reset or start a new game. ",
+      description: " Players to mark X and O on the grid, with automatic win detection the option to reset or start a new game. ",
       image: profilePic8,
       githubLink: "https://github.com/TosifJamadar/Tic-Tac-Toe",
     },
